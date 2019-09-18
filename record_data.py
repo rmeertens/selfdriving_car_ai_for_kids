@@ -5,6 +5,7 @@ if __name__ == "__main__":
     WEBCAM_ID = 1
 
     video_capture = cv2.VideoCapture(WEBCAM_ID)
+
     video_capture.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
     video_capture.set(cv2.CAP_PROP_FRAME_HEIGHT, 1024)
 

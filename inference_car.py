@@ -5,7 +5,7 @@ import cv2
 
 if __name__ == "__main__":
 
-    WEBCAM_ID = 1
+    WEBCAM_ID = 0
     execution_path = os.getcwd()
     model_path = os.path.join(execution_path, "yolo.h5")
 
@@ -38,7 +38,7 @@ if __name__ == "__main__":
         result_key = cv2.waitKey(1)
         if result_key & 0xFF == ord('q'):
             break
-            
+
     # When everything is done, release the capture
     video_capture.release()
     cv2.destroyAllWindows()

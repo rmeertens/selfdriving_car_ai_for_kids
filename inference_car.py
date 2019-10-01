@@ -1,7 +1,8 @@
+from PIL import Image
 from imageai.Detection import ObjectDetection
 import os
 import cv2
-
+import datetime
 
 if __name__ == "__main__":
 
@@ -25,19 +26,23 @@ if __name__ == "__main__":
             print('Unable to load camera')
             pass
 
-
         # Capture frame-by-frame
         ret, frame = video_capture.read()
         output_image, detections = detector.detectObjectsFromImage(input_image=frame, input_type='array', output_type='array')
 
-        for eachObject in detections:
-            print(eachObject["name"] , " : " , eachObject["percentage_probability"] )
+        print({eachObject["name"]: eachObject["percentage_probability"] for eachObject in detections})
 
         cv2.imshow('Video', output_image)
 
         result_key = cv2.waitKey(1)
         if result_key & 0xFF == ord('q'):
             break
+        elif result_key & 0xFF == ord('s'):
+            now = datetime.datetime.now()
+            fileName = "image-{}.png".format(now).replace(" ", "_")
+            img = Image.fromarray(output_image, 'RGB')
+            img.save(fileName)
+            print("Captured", fileName)
 
     # When everything is done, release the capture
     video_capture.release()

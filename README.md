@@ -49,3 +49,29 @@ We showed the car images of real mice. Try to show the car the cartoon mouse fro
 
 
 
+## Educational materials (German)
+
+Entdecken Sie, wie selbstfahrende Autos die Welt sehen! 
+
+Willkommen in unserem selbstfahrenden Auto. Wir haben dieses Auto mit einer Kamera ausgestattet und ihm die Welt um uns herum beigebracht, indem wir 200.000 Bilder zeigten und dem Auto sagten, was auf dem Bild zu sehen ist. Es ist nun Ihre Aufgabe, herauszufinden, was das Auto zu erkennen gelernt hat, und darüber nachzudenken, wie nützlich dies für ein selbstfahrendes Auto ist. Versuchen Sie zu sehen, ob das Auto die folgenden Dinge erkennen kann:
+
+Person, Fahrrad, Auto, Motorrad, Flugzeug, Bus, Zug, LKW, Boot, Ampel, Hydrant, Stoppschild, Parkuhr, Bank, Vogel, Katze, Hund, Pferd, Schaf, Kuh, Elefant, Bär, Zebra, Giraffe , Rucksack, Regenschirm, Handtasche, Krawatte, Koffer, Frisbee, Ski, Snowboard, Sportball, Drachen, Baseballschläger, Baseballhandschuhe, Skateboard, Surfbrett, Tennisschläger, Flasche, Weinglas, Tasse, Gabel, Messer, Löffel, Schüssel, Banane, Apfel, Sandwich, Orange, Brokkoli, Karotte, Hot Dog, Pizza, Donat, Kuchen, Stuhl, Couch, Topfpflanze, Bett, Esstisch, Toilette, Fernseher, Laptop, Maus, Fernbedienung, Tastatur, Handy, Mikrowelle, Backofen, Toaster, Spüle, Kühlschrank, Buch, Uhr, Vase, Schere, Teddybär, Föhn, Zahnbürste.
+
+Welches dieser Objekte sollte ein selbstfahrendes Auto wirklich erkennen?
+
+Fehlen in dieser Liste Dinge, die notwendig sind um ein selbstfahrendes Auto zu bauen?
+
+Wir haben die Bilder von echten Mäusen gezeigt. Versuchen Sie, dem Auto die Comic-Maus aus "Die Sendung mit der Maus" zu zeigen. Erkennt das Auto das? Warum? Warum nicht? Glaubst du, dass ein Auto, das nur eine Kamera verwendet, dich erkennt, wenn du einen Tigeranzug anziehst?
+
+Menschen haben zwei Augen. Warum? Wäre eine zweite Kamera nützlich für das Auto?
+
+Was macht das Auto, wenn es die Gegenstände erkennt? Wie funktioniert das?
+
+Ist das Auto wirklich schlau? Was ist diese künstliche Intelligenz überhaupt?
+
+Ist es eine gute Idee, Autos allein fahren zu lassen? Worauf muss man dabei achten?
+
+Was muss ein Auto das sehen kann noch lernen, bevor es allein fahren darf?
+
+Brauchen selbstfahrende Autos auch einen Führerschein?
+

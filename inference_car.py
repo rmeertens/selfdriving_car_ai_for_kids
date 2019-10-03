@@ -5,7 +5,7 @@ import cv2
 import datetime
 
 if __name__ == "__main__":
-    WEBCAM_ID = 0
+    WEBCAM_ID = 1
     execution_path = os.getcwd()
     model_path = os.path.join(execution_path, "yolo.h5")
 
@@ -27,12 +27,15 @@ if __name__ == "__main__":
 
         # Capture frame-by-frame
         ret, frame = video_capture.read()
-        output_image, detections = detector.detectObjectsFromImage(input_image=frame, input_type='array', output_type='array')
+
+        frame2 = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+        output_image_rgb, detections = detector.detectObjectsFromImage(input_image=frame2, input_type='array', output_type='array')
+        output_image_bgr = cv2.cvtColor(output_image_rgb, cv2.COLOR_RGB2BGR)
 
         print({eachObject["name"]: eachObject["percentage_probability"] for eachObject in detections})
-        h,w,c = output_image.shape
+        h,w,c = output_image_bgr.shape
 
-        toshow = cv2.resize(output_image, (2*w, 2*h))
+        toshow = cv2.resize(output_image_bgr, (2*w, 2*h))
 
         cv2.imshow('Video', toshow)
 
@@ -42,8 +45,7 @@ if __name__ == "__main__":
         elif result_key & 0xFF == ord('s'):
             now = datetime.datetime.now()
             fileName = "image-{}.png".format(now).replace(" ", "_")
-            output_image = cv2.cvtColor(output_image, cv2.COLOR_BGR2RGB)
-            img = Image.fromarray(output_image, 'RGB')
+            img = Image.fromarray(output_image_rgb, 'RGB')
             img.save(fileName)
             print("Captured", fileName)
         elif result_key & 0xFF == ord('l'):

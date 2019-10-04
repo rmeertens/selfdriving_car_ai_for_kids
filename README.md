@@ -23,7 +23,29 @@ For this demo you need the following materials:
 
 Its also nice to teach children about what you train on and interesting adversarial samples. For example: the detector can detect "real" mice, but is unable to recognise a cartoon mouse like the one from the German "Die Sendung mit der Maus". 
 
+## Impression of a day
+Setting up: there was initially a lot of sunglare, we managed to fix it by putting a cap on top of the webcam. Be prepared for this as it really messed up our detections the first half of the day. 
 
+![starting the day](https://github.com/rmeertens/selfdriving_car_ai_for_kids/blob/master/interesting_images/image-2019-10-03_08:55:08.457928.png?raw=true)
+
+A fun game to play with kids and adults is trying to perform an adversarial attack on the network. Here are two colleagues who get detected as horse and dog. As fun-fact: kids with long hair sometimes get detected as teddy bear if they are close to the camera. 
+
+![adversarial attack horse](https://github.com/rmeertens/selfdriving_car_ai_for_kids/blob/master/interesting_images/image-2019-10-03_09:04:40.772973.png?raw=true)
+![adversarial attack dog](https://github.com/rmeertens/selfdriving_car_ai_for_kids/blob/master/interesting_images/image-2019-10-03_09:20:36.099507.png?raw=true)
+
+Overall its quite fun to show different stuff to the laptop:
+
+![recognizing things](https://github.com/rmeertens/selfdriving_car_ai_for_kids/blob/master/interesting_images/image-2019-10-03_11:19:09.697854.png?raw=true)
+![wrong detection](https://github.com/rmeertens/selfdriving_car_ai_for_kids/blob/master/interesting_images/image-2019-10-03_12:02:03.965385.png?raw=true)
+
+Selfie of us testing out the network with a mouse
+
+![selfie with mouse](https://github.com/rmeertens/selfdriving_car_ai_for_kids/blob/master/interesting_images/image-2019-10-03_11:55:01.123909.png?raw=true)
+
+
+As a last comment: I initially forgot that opencv loads images by default in BGR, while the network is made for RGB. During the day things like an orange and broccoli did not get detected, as obviously the color was wrong. After fixing this bug you can detect fruits again: 
+
+![detecting things](https://github.com/rmeertens/selfdriving_car_ai_for_kids/blob/master/interesting_images/image-2019-10-03_18:07:48.544888.png?raw=true)
 
 ## Educational materials (English)
 Discover how self-driving cars will see the world!
